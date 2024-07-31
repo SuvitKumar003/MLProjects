@@ -24,6 +24,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component") 
 
         try:
+            #this line of code is used in reading the data set in case we want to read the data from api or mango db just we need to change the path over here
             df = pd.read_csv(r'notebook/data/stud.csv')
             logging.info("Exported the dataset and read it as dataframe")
 
